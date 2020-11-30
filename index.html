@@ -21,7 +21,44 @@
 </head>
 <body>
     <div id="app">
-
+        <div class="container-xl header-back">
+            <!-- HEADER -->
+            <header>
+                <div class="container align-center">
+                    
+                    <!-- LOGO -->
+                    <div class=" logo flex-25">
+                        <img src="./img/dark-logo.png" alt="">
+                    </div>
+                    
+                    <!-- MENU -->
+                    <div class=" menu flex-grow">
+                        MENU
+                    </div>
+                    
+                    <!-- ICONS -->
+                    <div class="icons flex-25">
+                        <ul class="flex justify-end">
+                            <li v-for="icon in icons">
+                                <i :class="icon"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+    
+            <!-- HERO -->
+            <div class="hero marg-top-30">
+                <div class="container">
+                    <div class="flex-40 hero-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quis sunt porro quos rerum excepturi error, minima fuga rem repellendus voluptatem quisquam. Voluptatum accusantium iste enim illo, ipsa doloribus qui?
+                    </div>
+                    <div class="hero-img flex-grow justify-center">
+                        <img src="./img/home-movation-hero-image.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- JS -->
     <script src="./js/main.js"></script>

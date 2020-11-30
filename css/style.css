@@ -7,3 +7,92 @@ body{
     font-family: 'Castoro', serif;
     font-family: 'Montserrat', sans-serif;
 }
+
+/* LAYOUT */
+.container-xl{
+    max-width: 100%;
+}
+
+.container{
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex{
+    display: flex;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-end{
+    justify-content: flex-end;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.flex-25{
+    flex-basis: 25%;
+    border: 1px solid black;
+}
+
+.flex-40{
+    flex-basis: 40%;
+    border: 1px solid black;
+}
+
+.flex-grow{
+    flex-grow: 1;
+    border: 1px solid black;
+}
+
+.marg-top-30{
+    margin-top: 30px;
+}
+
+li{
+    list-style: none;
+}
+
+/* HEADER */
+.header-back{
+    background-image: url(../img/background-pattern-wavify.png);
+    background-color: #f7f7fd;
+}
+
+header{
+    padding: 15px 0;
+}
+
+/* LOGO */
+header .container .logo img{
+    width: 140px;
+}
+
+/* ICONS */
+header .container .icons ul li i{
+   margin-left:20px; 
+}
+
+/* HERO */
+.hero-text{
+    padding: 30px 0;
+}
+
+.hero-img{
+    display: flex;
+    background-image: url(../img/home-movation-shape-face.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 390px;
+    background-position-x: 190px;
+}
+
+.hero .container img{
+    width: 400px;
+}
