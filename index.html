@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- FONTAWESOME    -->
+    <!--------- FONTAWESOME------- -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     
-    <!-- VUE -->
+    <!------------- VUE ------------->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     
-    <!-- FONT -->
+    <!------------- FONT ------------->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
     
-    <!-- CSS -->
+    <!-------------- CSS------------ -->
     <link rel="stylesheet" href="./css/style.css">
     
     <title>Max Coach</title>
@@ -22,16 +22,16 @@
 <body>
     <div id="app">
         <div class="container-xl header-back">
-            <!-- HEADER -->
+            <!------------ HEADER ------------>
             <header>
                 <div class="container align-center">
                     
-                    <!-- LOGO -->
+                    <!------------ LOGO ------------>
                     <div class=" logo flex-25">
                         <img src="./img/dark-logo.png" alt="">
                     </div>
                     
-                    <!-- MENU -->
+                    <!------------ MENU ------------>
                     <div class=" menu flex-grow">
                         <ul class="flex space-around">
                             <li v-for="item in menu">
@@ -43,7 +43,7 @@
                         </ul>
                     </div>
                     
-                    <!-- ICONS -->
+                    <!-------------- ICONS -------------->
                     <div class="icons flex-25">
                         <ul class="flex justify-end">
                             <li v-for="icon in icons">
@@ -56,15 +56,16 @@
                 </div>
             </header>
     
-            <!-- HERO -->
-            <div class="hero marg-top-40">
+            <!-------------- HERO -------------->
+            <div class="hero marg-top-50">
                 <div class="container">
-                    <!-- HERO TEXT -->
+                    <!-------------- HERO TEXT -------------->
                     <div class="flex-45 hero-text pad-top-50">
                         <h4>i'm wingman</h4>
-                        <h1 class="marg-top-20">peace on earth a wonderful wish but no way</h1>
-                        <p class="marg-top-20">Success isn't overnight. it's when everyday you get a little better than the day before. it all adds up.</p>
+                        <h1 class="marg-20">peace on earth a wonderful wish but no way</h1>
+                        <p class="marg-20">Success isn't overnight. it's when everyday you get a little better than the day before. it all adds up.</p>
                         <a href="#">
+                            <!--------------- BUTTON --------------->
                             <div class="btn">
                                 <span>get started for free</span>  
                                 <i class="fas fa-arrow-right"></i>
@@ -72,15 +73,58 @@
                         </a>
                     </div>
 
-                    <!-- HERO IMAGE -->
+                    <!--------------- HERO IMAGE -------------->
                     <div class="hero-img flex-grow justify-center">
                         <img src="./img/home-movation-hero-image.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
+        
+        <!---------------- STATS ---------------->
+        <div class=" stats container pad-90">
+            <div class="flex-25">
+                <p class="number green-text">1.926</p>
+                <p class="marg-20">finished sessions</p>
+            </div>
+            <div class="flex-25">
+                <p class="number green-text">100%</p>
+                <p class="marg-20">satisfaction rate</p>
+            </div>
+            <div class="flex-25">
+                <p class="number green-text">3092+</p>
+                <p class="marg-20">enrolled learners</p>
+            </div>
+            <div class="flex-25">
+                <p class="number green-text">200</p>
+                <p class="marg-20">online instructors</p>
+            </div>
+        </div>
+
+        <!---------------- ABOUT ME ---------------->
+        <div class="about-me container space-between">
+
+            <!---------------- LEFT SECTION ---------------->
+            <div class="left-section flex-30">
+                <h4>about me</h5>
+                <h3 class="marg-20">
+                    How to Be an Alpha Male: The 15 Habits of True Alphas
+                </h3>
+            </div>
+
+            <!---------------- RIGHT SECTION ---------------->
+            <div class="right-section flex-50">
+                <p class="main-text">
+                    Want to learn how to be <span class="green-text">an alpha male</span>? How to be more masculine? How to be the man you've always wanted to be?
+                </p>         
+                <p class="marg-20">
+                    Your goal is to show the consistency of business, core values, and customer core. Punctuality, reponsability, individuality, accuracy, enthusiasm - you have to clearly explain how these qualities are applicable to your work. And the important thing is you do love what you do.
+                </p>      
+            </div>
+        </div>
     </div>
-    <!-- JS -->
+    
+    <!------------------ JS ------------------>
     <script src="./js/main.js"></script>
 </body>
 </html>
