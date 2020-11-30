@@ -1,7 +1,14 @@
 const app = new Vue({
     el: '#app',
     data: {
-        menu:{},
+        menu:[
+            'home',
+            'pages',
+            'courses',
+            'features',
+            'blog',
+            'shop'
+        ],
         icons:[
             'fab fa-twitter',
             'fab fa-facebook-f',

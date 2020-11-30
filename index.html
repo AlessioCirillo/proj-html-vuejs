@@ -12,7 +12,7 @@
     
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Castoro&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
@@ -33,14 +33,23 @@
                     
                     <!-- MENU -->
                     <div class=" menu flex-grow">
-                        MENU
+                        <ul class="flex space-around">
+                            <li v-for="item in menu">
+                                <a href="#">
+                                    <span>{{item}}</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                     
                     <!-- ICONS -->
                     <div class="icons flex-25">
                         <ul class="flex justify-end">
                             <li v-for="icon in icons">
-                                <i :class="icon"></i>
+                                <a href="#">
+                                    <i :class="icon"></i>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -48,11 +57,22 @@
             </header>
     
             <!-- HERO -->
-            <div class="hero marg-top-30">
+            <div class="hero marg-top-40">
                 <div class="container">
-                    <div class="flex-40 hero-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quis sunt porro quos rerum excepturi error, minima fuga rem repellendus voluptatem quisquam. Voluptatum accusantium iste enim illo, ipsa doloribus qui?
+                    <!-- HERO TEXT -->
+                    <div class="flex-45 hero-text pad-top-50">
+                        <h4>i'm wingman</h4>
+                        <h1 class="marg-top-20">peace on earth a wonderful wish but no way</h1>
+                        <p class="marg-top-20">Success isn't overnight. it's when everyday you get a little better than the day before. it all adds up.</p>
+                        <a href="#">
+                            <div class="btn">
+                                <span>get started for free</span>  
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </a>
                     </div>
+
+                    <!-- HERO IMAGE -->
                     <div class="hero-img flex-grow justify-center">
                         <img src="./img/home-movation-hero-image.png" alt="">
                     </div>
