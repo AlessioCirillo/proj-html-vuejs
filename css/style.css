@@ -13,7 +13,7 @@ body{
 h5{
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 h1,
@@ -44,10 +44,6 @@ h3{
 
 .purple-text{
     color: #3f3a64;;
-}
-
-p{
-    line-height: 1.5rem;
 }
 
 .number{
@@ -127,16 +123,24 @@ a{
 }
 
 /********** PADDING AND MARGIN **********/
-.pad-90{
-    padding: 90px 0;
-}
-
 .marg-top-50{
     margin-top: 50px;
 }
 
+.marg-bot-20{
+    margin-bottom: 20px;
+}
+
 .marg-20{
     margin: 20px 0;
+}
+
+.pad-90{
+    padding: 90px 0;
+}
+
+.pad-bot-90{
+    padding-bottom: 90px;
 }
 
 .pad-top-50{
@@ -151,10 +155,14 @@ a{
     padding: 50px 0;
 }
 
+.pad-right-90{
+    padding-right: 90px;
+}
+
 /**************** BUTTONS ****************/
 .btn{
     display: inline-block;
-    padding: 15px 45px;
+    padding: 15px 55px;
     margin-top: 10px;
     background: #20ad96;
     border-radius: 5px;
@@ -167,6 +175,25 @@ a{
 .btn i{
     margin-left: 10px;
     font-size: 12px;
+}
+
+/*************** SHOP SECTION ***************/
+.price{
+    font-size: 24px;
+}
+
+.price span{
+    font-size: 18px;
+}
+
+.offer-title{
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.offer-title span{
+    text-transform: none;
 }
 
 /**************** HEADER ****************/
@@ -213,6 +240,11 @@ header .container .icons ul li a{
     font-size: 50px;
 }
 
+.hero-text p{
+    line-height: 1.5rem;    
+}
+ 
+
 /****** HERO IMAGE ******/
 .hero-img{
     display: flex;
@@ -238,6 +270,7 @@ header .container .icons ul li a{
 }
 
 .stats div p:last-child{
+    font-size: 16px;
     text-transform: uppercase;
     font-weight: 500;
     color: #333333;
@@ -323,24 +356,6 @@ header .container .icons ul li a{
 }
 
 /*********** COURSE TEXT ***********/
-.courses .offers .offer .price{
-    font-size: 24px;
-}
-
-.courses .offers .offer .price span{
-    font-size: 18px;
-}
-
-.courses .offers .offer .offer-title{
-    font-size: 16px;
-    text-transform: capitalize;
-    font-weight: 600;
-}
-
-.courses .offers .offer .offer-title span{
-    text-transform: none;
-}
-
 .courses .offers .offer .lessons{
     font-size: 12px;
 }
@@ -351,4 +366,29 @@ header .container .icons ul li a{
 
 .courses .offers .offer .lessons p i{
     margin-right: 5px;
+}
+
+/****************  BOOKS *****************/
+.books-text ul li i{
+    position: relative;
+    top: 4px;
+    margin-right: 20px;
+}
+
+.books-text ul li p{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.books-text ul{
+    margin-bottom: 48px;
+}
+
+.book-img{
+    flex-basis: 27%;
+    text-align: center;
+}
+
+.book-img img{
+    width: 100%;
 }
