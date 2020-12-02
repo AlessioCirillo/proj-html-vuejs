@@ -523,6 +523,7 @@ footer .container ul li a{
     color: #a8a8a8;
 }
 
+/*******NAVIGATIO AND INFO*******/
 .navigation li a,
 .information li a{
     text-transform: capitalize;
@@ -546,6 +547,7 @@ footer .container ul li a{
     margin: 7px 0;
 }
 
+/************FOOTER***********/
 footer .container .icons ul li a{
     margin-left: 0;
     margin-right: 22px;

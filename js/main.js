@@ -1,6 +1,7 @@
 const app = new Vue({
     el: '#app',
     data: {
+        // HEADER 
         menu:[
             'home',
             'pages',
@@ -15,6 +16,7 @@ const app = new Vue({
             'fab fa-instagram',
             'fab fa-linkedin'
         ],
+        // FOOTER
         contacts:[
             '382 NE 191st ST # 87394 Miami, FL 33179-3899',
             '+1(305) 547-9909 (9am - 5pm EST, Monday - Friday)',
