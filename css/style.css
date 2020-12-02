@@ -13,7 +13,7 @@ body{
 h5{
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 h1,
@@ -91,6 +91,10 @@ h3{
     justify-content: space-around;
 }
 
+.space-between{
+    justify-content: space-between;
+}
+
 .flex-25{
     flex-basis: 25%;
 }
@@ -140,8 +144,6 @@ a{
 .marg-20{
     margin: 20px 0;
 }
-
-
 
 .pad-90{
     padding: 90px 0;
@@ -204,6 +206,13 @@ a{
     text-transform: none;
 }
 
+/****** ICONS ******/
+.icons ul li a{
+    margin-left:22px; 
+    color: #333333;
+    font-size: 18px;
+ }
+
 /**************** HEADER ****************/
 .header-back{
     background-image: url(../img/background-pattern-wavify.png);
@@ -230,13 +239,6 @@ header .container .menu ul li a i{
     position: relative;
     bottom: 0px;
     margin-left: 5px;
-}
-
-/****** ICONS ******/
-header .container .icons ul li a{
-   margin-left:22px; 
-   color: #333333;
-   font-size: 18px;
 }
 
 /****************** HERO ******************/
@@ -364,15 +366,15 @@ header .container .icons ul li a{
 }
 
 /*********** COURSE TEXT ***********/
-.courses .offers .offer .lessons{
-    font-size: 12px;
+.lessons{
+    font-size: 13px;
 }
 
-.courses .offers .offer .lessons p{
+.lessons p{
     margin-right: 30px;
 }
 
-.courses .offers .offer .lessons p i{
+.lessons p i{
     margin-right: 5px;
 }
 
@@ -412,6 +414,7 @@ header .container .icons ul li a{
 
 /************STORIES*************/
 .stories{
+    position: relative;
     margin-top: 90px;
     margin-bottom: 90px;
     height: 562px;
@@ -441,52 +444,114 @@ header .container .icons ul li a{
 }
 
 .stories-img{
-    /* position: relative; */
-    background-image: url(../img/home-movation-testimonial-image-768x562.jpg);
+    background-image: url(../img/home-movation-testimonial-image.jpg);
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
-.stories-text::after{
-    content: "1/4";
-    display: inline-block;
+.circle{
     position: absolute;
     top: 50%;
-    right: -40px;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+    line-height: 80px;
     height: 80px;
     width: 80px;
     border-radius: 50%;
     background: #fff;
-    /* z-index: 1; */
 }
 
-/* .stories .arrow-up{
-    width: 12px;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    z-index: 2;
-} */
- 
-/* .stories-img::after{
-    content: "";
-    display: inline-block;
-    background-image: url(../img/image\ \(1\).png);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    position: absolute;
-    top: 50%;
-    z-index: 2;
-} */
+.arrow-up{
+    position: relative;
+    bottom: 24px;
+    left: 19px;
+}
 
-/* .stories-img::before{
-    content: "";
-    display: inline-block;
-    background-image: url(../img/image.png);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    position: absolute;
-    top: 50%;
-    right: -40px;
-    z-index: 2;
-}  */
+.arrow-down{
+    position: relative;
+    top: 20px;
+    right: 19px;
+}
+
+/************ BLOG ************/
+.blog h3{
+    text-transform: none;
+}
+
+.article{
+    flex-basis: 23%;
+}
+
+.article img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.blog .recall {
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.blog .recall a{
+    border-bottom: 1px solid #20ad96;
+} 
+
+/*************FOOTER**************/
+footer{
+    background: #171621;
+    font-size: 12px;
+}
+
+footer .container{
+    justify-content: flex-start;
+}
+
+footer .contacts li,
+footer .information li{
+    margin: 15px 0;
+}
+
+footer p{
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+
+footer .container ul li a{
+    color: #a8a8a8;
+}
+
+.navigation li a,
+.information li a{
+    text-transform: capitalize;
+}
+
+.navigation{
+    flex-basis: 27.5%;
+}
+
+.navigation p{
+    margin-bottom: 8px;
+}
+
+.navigation ul{
+    height: 120px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.navigation li{
+    margin: 7px 0;
+}
+
+footer .container .icons ul li a{
+    margin-left: 0;
+    margin-right: 22px;
+}
+
+footer .copy{
+    text-align: center;
+    color:  #a8a8a8;
+}

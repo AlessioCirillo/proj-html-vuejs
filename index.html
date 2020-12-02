@@ -448,7 +448,9 @@
 
         <!----------------STORIES------------------>
         <div class="container-xxl header-back">
+
             <div class="stories container-xl flex">
+                <!----------- TEXT ----------->
                 <div class="stories-text flex-50">
                     <h5 class="green-text">
                         real stories
@@ -459,14 +461,183 @@
                     <img src="./img/testimonial-avata-02.jpg" alt="">
                     <p>Mina Hollace</p>
                     <span class="grey-text">/ Freelancer</span>
-                    <!-- <img class="arrow-up" src="./img/image.png" alt="">
-                    <img class="arrow-down" src="./img/image (1).png" alt=""> -->
+                
                 </div>
+                
+                <!---------- CIRCLE ---------->
+                <div class="circle">
+                    <a class="arrow-up" href="#">
+                        <img src="./img/image.png" alt="">
+                    </a>
+
+                    <span>
+                        1/4
+                    </span>
+                    
+                    <a class="arrow-down" href="#">
+                        <img src="./img/image (1).png" alt="">
+                    </a>
+                </div>
+                <!----------- IMG ----------->
                 <div class="stories-img flex-50">
-    
                 </div>
             </div>
         </div>
+
+        <!----------------- BLOG ----------------->
+        <div class="blog container">
+            <h5 class="marg-20">
+                blog updated
+            </h5>
+            <h3 class="pad-bot-50">
+                Interesting <span class="green-text">articles updated</span> daily
+            </h3>
+
+            <div class="articles flex space-between">
+                
+                <!---------- SINGLE ARTICLE ---------->
+                <div class="article">
+                    <!--------- IMG --------->
+                    <img src="./img/motivation-blog-04-480x325.jpg" alt="">
+
+                    <!------- TEXT ------->
+                    <div class="lessons grey-text marg-20">
+                        <p>
+                            <i class="far fa-calendar"></i>
+                            May <span class="number">13, 2020</span>
+                        </p>
+                    </div>
+                    <p class="offer-title marg-bot-20">
+                        how <span>to</span> stay true <span>to</span> your personal brand
+                    </p>   
+                    <p class="lessons grey-text">
+                        When it comes to your business or career, you want ...
+                    </p>
+                </div>
+
+                <!---------- SINGLE ARTICLE ---------->
+                <div class="article">
+                    <!--------- IMG --------->
+                    <img src="./img/motivation-blog-03-480x325.jpg" alt="">
+
+                    <!------- TEXT ------->
+                    <div class="lessons grey-text marg-20">
+                        <p>
+                            <i class="far fa-calendar"></i>
+                            May <span class="number">13, 2020</span>
+                        </p>
+                    </div>
+                    <p class="offer-title marg-bot-20">
+                        5 vital lessons <span>in</span> 5 years <span>of</span> freelancing
+                    </p>   
+                    <p class="lessons grey-text">
+                        Being self-employed and working from home, it's easy to get
+                    </p>
+                </div>
+
+                <!---------- SINGLE ARTICLE ---------->
+                <div class="article">
+                    <!--------- IMG --------->
+                    <img src="./img/motivation-blog-02-480x325.jpg" alt="">
+
+                    <!------- TEXT ------->
+                    <div class="lessons grey-text marg-20">
+                        <p>
+                            <i class="far fa-calendar"></i>
+                            May <span class="number">13, 2020</span>
+                        </p>
+                    </div>
+                    <p class="offer-title marg-bot-20">
+                        11 super useful tips <span>for</span> small-business owners
+                    </p>   
+                    <p class="lessons grey-text">
+                        Being a small-business owner pases a tan of challenges. We ...
+                    </p>
+                </div>
+
+                <!---------- SINGLE ARTICLE ---------->
+                <div class="article">
+                    <!--------- IMG --------->
+                    <img src="./img/motivation-blog-01-480x325.jpg" alt="">
+
+                    <!------- TEXT ------->
+                    <div class="lessons grey-text marg-20">
+                        <p>
+                            <i class="far fa-calendar"></i>
+                            May <span class="number">13, 2020</span> 
+                        </p>
+                    </div>
+                    <p class="offer-title marg-bot-20">
+                        how  <span>to</span> give yourself grace <span>to</span> start again
+                    </p>   
+                    <p class="lessons grey-text">
+                        Forgive yourself for bad habits you may have started or ...
+                    </p>
+                </div>
+            </div>
+
+            <div class="recall pad-top-50 pad-bot-50">
+                <a class="green-text" href="#">
+                    view ala posts
+                </a>
+            </div>
+        </div>
+
+        <!---------------- FOOTER ---------------->
+        <footer class="pad-50 marg-top-50">
+            <div class="container flex">
+                
+                <div class="contacts flex-50">
+                    <p>Address</p>
+                    <ul>
+                        <li v-for="contact in contacts">
+                            <a href="#">
+                                {{contact}}
+                            </a>
+                        </li>
+                    </ul>    
+                </div>
+                
+                <div class="navigation">
+                    <p>Explore</p>
+                    <ul class="flex">  
+                        <li v-for="item in explore">
+                            <a  href="#">
+                                {{item}}
+                            </a>
+                        </li>              
+                     </ul>
+                </div>
+
+                <div class="information">
+                    <p>Information</p>
+                    <ul>  
+                        <li v-for="item in information">
+                            <a href="#">
+                                {{item}}
+                            </a>
+                        </li>            
+                     </ul>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="icons">
+                    <ul class="flex">
+                        <li v-for="icon in footerIcons">
+                            <a href="#">
+                                <i :class="icon"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="copy pad-top-50">
+                    <i :class="copy.copyIcon"></i>
+                    {{copy.copyText}}
+                </div>
+            </div>
+        </footer>
     </div>
     
     <!------------------ JS ------------------>
