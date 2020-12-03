@@ -218,7 +218,8 @@ a{
  }
 
  /**********HOVER*********/
- .btn:hover{
+ .btn:hover,
+ a .bottom-arrow:hover{
      background: #3f3a63;
      transition: 0.4s;
  }
@@ -229,11 +230,13 @@ a{
      transition: 0.4s;
  }
 
- .offer:hover{
+ .offer:hover,
+ .article:hover{
     box-shadow: 0px 50px 90px -30px #aaa;
     cursor: pointer;
     transform: scale(1.05);
     transition: 0.4s;
+    border-radius: 5px;
  }
 
 .book-img:hover .on-hover ul{
@@ -539,6 +542,7 @@ header .container .menu ul li a i{
 
 .article{
     flex-basis: 23%;
+    padding: 10px;
 }
 
 .article img{
@@ -645,4 +649,7 @@ footer .copy{
     background: #20ad96;
     text-align: center;
     line-height: 50px;
+    transition: 0.4s;
+    opacity: 0;
 }
+

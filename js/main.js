@@ -1,3 +1,15 @@
+
+Vue.directive('scroll', {
+    inserted: function (el, binding) {
+      let f = function (evt) {
+        if (binding.value(evt, el)) {
+          window.removeEventListener('scroll', f)
+        }
+      }
+      window.addEventListener('scroll', f)
+    }
+  })
+
 const app = new Vue({
     el: '#app',
     data: {
@@ -48,5 +60,22 @@ const app = new Vue({
             ],
             copyText: '2020 Maxcoach. All Rights Reserved'
         }
+    },
+
+    methods:{
+        // EVENTO SCROLL
+        handleScroll: function (evt, el) {
+            if (window.scrollY > 1700) {
+              el.setAttribute(
+                'style',
+                'opacity: 1'
+              )
+            } else if(window.scrollY < 1700){
+                el.setAttribute(
+                    'style',
+                    'opacity: 0'
+                )
+            }
+        }   
     }
 });
